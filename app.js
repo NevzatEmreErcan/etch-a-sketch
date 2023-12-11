@@ -67,11 +67,14 @@ canvas_div.addEventListener("click", (e) => {
 function painter(target) {
     if (eraseMode){
         target.style.backgroundColor = "#ffffff"
+        target.style.borderColor = "#00000034"
     } else {
         target.style.backgroundColor = penColor_input.value
+        target.style.borderColor = penColor_input.value
 
         clear_btn.addEventListener("click", () => {
             target.style.backgroundColor = "#ffffff"
+            target.style.borderColor = "#00000034"
         })
     }
 
