@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta 
+        name="viewport" content="width=device-width, initial-scale=1.0"
+    >
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="header"><h1>Etch a Sketch</h1></header>
+    <div class="container">
+        <div class="input-area">
+            <div class="input-color">
+                <input type="color" name="pen-color" id="pen-color">
+                <label for="pen-color"><p>Color</p></label>
+            </div>
+            <div class="input-size">
+                <input 
+                type="range" min="1" max="64" value="16" 
+                name="grid-value" id="grid-value"
+                >
+                <label for="grid-value"><p class="grid-size">16x16</p></label>
+                
+            </div>
+            <button class="btn" id="erase-btn">Erase</button>
+            <button class="btn" id="clear-btn">Clear</button>
+        </div>
+        <div class="canvas"></div>
+    </div>
+</body>
+</html>
